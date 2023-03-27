@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Mobile from './mobile';
-
+import Siva from "./class";
+import Ram from "./mobile1"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 let books = [
@@ -58,11 +59,17 @@ let books = [
     
 root.render(
   <React.StrictMode>
-    <h1>Mobiles</h1>
+    <h1>Mobiles function state </h1>
     <Mobile dd={mobiles}/>
     <hr></hr>
-    <h1>books</h1>
+    <h1>books function</h1>
     <App flt ={books}/>
+    <hr></hr>
+    <h1>books class</h1>
+    <Siva hr={books}/>
+    <hr></hr>
+    <h1>mobiles class state</h1>
+    <Ram g={mobiles}/>
   </React.StrictMode>
 );
 

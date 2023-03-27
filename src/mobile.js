@@ -12,7 +12,7 @@ function Mobile(props){
         if(sad>sosad){return 1}
         return 0;
  })
-     {siva=='yeru' ? whychange(so):whychange(so.reverse())}
+{siva==='yeru' ? whychange(so):whychange(so.reverse())}
    }
    let price=()=>{
     var data=[...h].sort((a,b)=>a.price-b.price)
@@ -21,14 +21,15 @@ function Mobile(props){
    let fil=()=>{
     let buy=[...h].filter(s=>s.isPurchased===true)
     whychange(buy)
-   }
-    
+   }  
     return(
        <>
+       <div className="flex">
        <button onClick={()=>whysorting("yeru")}>ascending order</button>
        <button onClick={()=>whysorting("siva")}>decending order</button>
        <button onClick={()=>price()}>price list</button>
        <button onClick={()=>fil()}>isPurchased</button>
+       </div>
        {mobile.map((v,i)=><h1 key={i}>{v.name}-{v.price}</h1>)}
        </>
     )

@@ -12,11 +12,16 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.flex{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 button{
   padding:10px;
   background-color: #61dafb;
   border: none;
-  margin: 0px 100px;
+  margin: 5px 0px 0px 5%;
 }
 h1{
   text-align: center;
