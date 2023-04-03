@@ -5,7 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Mobile from './mobile';
 import Siva from "./class";
-import Ram from "./mobile1"
+import Ram from "./mobile1";
+import Life from './life_cycle';
+import Form from './forms';
+import Router from './router';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 let books = [
@@ -59,6 +62,9 @@ let books = [
     
 root.render(
   <React.StrictMode>
+    <h1>form</h1>
+    <Form/>
+    <hr></hr>
     <h1>Mobiles function state </h1>
     <Mobile dd={mobiles}/>
     <hr></hr>
@@ -68,8 +74,14 @@ root.render(
     <h1>books class</h1>
     <Siva hr={books}/>
     <hr></hr>
-    <h1>mobiles class state</h1>
+    <h1>Mobiles class state</h1>
     <Ram g={mobiles}/>
+    <hr></hr>
+    <h1>life_cycle</h1>
+    <Life siva={mobiles}/>
+    <hr></hr>
+    <h1>router</h1>
+    <Router/>
   </React.StrictMode>
 );
 

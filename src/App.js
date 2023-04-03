@@ -11,7 +11,7 @@ function App(props) {
     <>
       <div>
         {s.map((s,i)=><h1 key={i}>{s.year}books<button onClick={()=>{siva(s.year)}}>click</button></h1>)}
-          
+
       </div>
     </>
   );

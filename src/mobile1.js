@@ -22,7 +22,7 @@ render(){
             if(sad>sosad){return 1}
             return 0;
      })
-    {siva==='yeru' ? this.setState({h:so}):this.setState({h:so.reverse()})}
+     {siva==='yeru' ? this.setState({h:so}):this.setState({h:so.reverse()})}
        }
        price=()=>{
     var data=[...f].sort((a,b)=>a.price-b.price)

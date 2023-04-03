@@ -40,7 +40,31 @@ h1{
 .App-link {
   color: #61dafb;
 }
-
+.from ul{
+    display: flex;
+    list-style: kannada;
+    flex-wrap: wrap;
+}
+.from ul li{
+  width: 25%;
+  background-color: antiquewhite;
+  height:auto ;
+}
+input[type="submit"]{
+  padding:10px;
+  background-color: #61dafb;
+  border: none;
+  margin: 5px 0px 0px 5%;
+}
+.from{
+  display: flex;
+  justify-content: center;
+  line-height: 2;
+}
+.from input{
+  padding: 10px;
+  margin:20px;;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
